@@ -36,6 +36,33 @@ func NewReceipeHandler(c *gin.Context){
 
 
 }
+//manipulateur de mise à jour 
+func UpdateRecipeHandler(c *gin.Context){
+	id := c.Param("id")
+	var recipe models.Recipe
+	if err := c.ShouldBindJSON(&recipe); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{
+			"error" : err.Error()})
+		return
+	}
+
+	index := -1
+
+	for i:= 0; i< len(recipes); i++{
+		if recipes[i].ID == id{
+			index =i
+		}
+	}
+
+	if index == -1 {
+		c.JSON(http.StatusNotFound, gin.H{
+			"error" : "Recipe not found"})
+			return
+	}
+
+	recipes[index] = recipe
+	c.JSON(http.StatusOK, recipe)
+}
 func main(){
 	//initialisation du routeur gin 
 	router :=gin.Default()
@@ -43,6 +70,8 @@ func main(){
 	router.POST("/recipes",NewReceipeHandler)
 	//implementation d'une route http GET
 	router.GET("/recipes",ListRecipesHandler)
+	//implementation d'une route http PUT
+	router.PUT("/recipes/:id", UpdateRecipeHandler)
 
 	// execution au port par défaut 8080
 	router.Run()
