@@ -1,0 +1,62 @@
+[
+    {
+        "id": "ck2bmp91inf2sh01edpg",
+        "name": "AYIMOLOU ",
+        "tags": [
+            "maca",
+            "gali",
+            "kanami"
+        ],
+        "ingredients": [
+            "ayi",
+            "molou",
+            "sel"
+        ],
+        "instructions": [
+            " eau ajoutant du sel au feu pendant 10 minutes",
+            "ajouter haricot pour cuire pendant 30 minutes ",
+            "ajouter le riz et attendre 30 minutes"
+        ],
+        "publishedAt": "2023-09-15T20:15:33.5825249Z"
+    },
+    {
+        "id": "ck2bn0p1inf2sh01edq0",
+        "name": "AKPAN ",
+        "tags": [
+            "DOYI",
+            "gPOD",
+            "kaGGDD"
+        ],
+        "ingredients": [
+            "ayi",
+            "molou",
+            "sel"
+        ],
+        "instructions": [
+            " eau ajoutant du sel au feu pendant 10 minutes",
+            "ajouter haricot pour cuire pendant 30 minutes ",
+            "ajouter le riz et attendre 30 minutes"
+        ],
+        "publishedAt": "2023-09-15T20:16:03.7926217Z"
+    },
+    {
+        "id": "ck2bn311inf2sh01edqg",
+        "name": "KOLIKO ",
+        "tags": [
+            "DOYI",
+            "gPOD",
+            "kaGGDD"
+        ],
+        "ingredients": [
+            "ayi",
+            "molou",
+            "sel"
+        ],
+        "instructions": [
+            " eau ajoutant du sel au feu pendant 10 minutes",
+            "ajouter haricot pour cuire pendant 30 minutes ",
+            "ajouter le riz et attendre 30 minutes"
+        ],
+        "publishedAt": "2023-09-15T20:16:12.4835152Z"
+    }
+]
