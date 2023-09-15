@@ -1,5 +1,6 @@
 package models
 import "time"
+//ici nous allong définir le model de donnée et le format json et leur noms correspondant
 type Recipe struct{
 	ID string `json:"id"`
 	Name string `json:"name"`
