@@ -22,18 +22,7 @@ package main
 		recipes = make([]models.Recipe, 0)
 		
 	}
-func main(){
-	//initialisation du routeur gin 
-	router :=gin.Default()
-
-	//implementation d'une route http POST
-	router.POST("/recipes",NewReceipeHandler)
-
-	// execution au port par défaut 8080
-	router.Run()
-}
-
- 
+	 
 func NewReceipeHandler(c *gin.Context){
 	var recipe models.Recipe
 	if err:=c.ShouldBindJSON(&recipe); err !=nil{
@@ -48,3 +37,14 @@ func NewReceipeHandler(c *gin.Context){
 
 
 }
+func main(){
+	//initialisation du routeur gin 
+	router :=gin.Default()
+	//implementation d'une route http POST
+	router.POST("/recipes",NewReceipeHandler)
+
+	// execution au port par défaut 8080
+	router.Run()
+}
+
+
